@@ -1,0 +1,9 @@
+.expense-item {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  background-color: #4b4b4b;
+}
