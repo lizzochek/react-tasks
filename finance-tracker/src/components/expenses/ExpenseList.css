@@ -5,3 +5,12 @@
   width: 50rem;
   max-width: 95%;
 }
+
+.no-expenses {
+  color: white;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}

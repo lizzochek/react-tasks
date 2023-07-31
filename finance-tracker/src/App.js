@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ExpenseList from './components/expenses/ExpenseList';
-import NewExpense from './components/form/NewExpense';
+import NewExpense from './components/new-expense/NewExpense';
 
 export default function App() {
   const [expenses, setExpenses] = useState([
@@ -31,7 +31,7 @@ export default function App() {
   ]);
 
   const onNewExpense = (expenseData) =>
-    setExpenses((prevState) => [...prevState, expenseData]);
+    setExpenses((prevState) => [expenseData, ...prevState]);
 
   return (
     <div className='App'>

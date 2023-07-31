@@ -21,6 +21,12 @@
   max-width: 100%;
 }
 
-.new-expense__actions {
+.new-expense__action {
   text-align: right;
+}
+
+.new-expense__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
