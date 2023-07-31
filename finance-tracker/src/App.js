@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import ExpenseList from './components/expenses/ExpenseList';
+import NewExpense from './components/form/NewExpense';
 
 export default function App() {
-  const expenses = [
+  const [expenses, setExpenses] = useState([
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -26,10 +28,14 @@ export default function App() {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
-  ];
+  ]);
+
+  const onNewExpense = (expenseData) =>
+    setExpenses((prevState) => [...prevState, expenseData]);
 
   return (
     <div className='App'>
+      <NewExpense onNewExpense={onNewExpense} />
       <ExpenseList expenses={expenses} />
     </div>
   );
