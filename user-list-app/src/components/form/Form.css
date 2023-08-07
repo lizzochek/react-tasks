@@ -1,0 +1,33 @@
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form__actions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.form__action {
+  margin-right: 1rem;
+}
+
+button {
+  background-color: rgb(118, 58, 173);
+  color: rgb(245, 233, 245);
+  border: none;
+  height: 30px;
+  width: 150px;
+}
+
+button:hover {
+  background-color: rgb(141, 86, 141);
+  cursor: pointer;
+}

@@ -1,0 +1,36 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.error-modal {
+  position: absolute;
+  top: 20%;
+  left: 31%;
+  height: 30%;
+  width: 40% !important;
+}
+
+.error-modal h2 {
+  background-color: rgb(118, 58, 173);
+  color: #fff;
+  padding: 1rem;
+  margin-top: 0;
+  border-radius: 12px 12px 0 0;
+}
+
+.error-modal p {
+  padding-left: 2rem;
+}
+
+.error-modal .error-action {
+  padding-left: 1.5rem;
+}
+
+.modal-backdrop .card {
+  padding: 0;
+}
